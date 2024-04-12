@@ -1,0 +1,46 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/tienda.css' %}">
+<link rel="stylesheet" href="{% static 'css/carrito.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<div class="card h-150" style="width: 116rem;">
+    <img src="media/imagenesProductos/FOTO-WEB-pancakes-de-cinnamon-roll.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h3 class="card-title text-center text-decoration-underline">Panqueques de Cinnamon Roll</h3>
+        <p class="card-text">Panqueques, con forma de Cinnamon Roll, cubiertos de glaseado y con un exquisito sabor a canela.</p>
+        <hr>
+        <br>
+        <h2 class="card-title text-center text-decoration-underline">Preparación</h2>
+        <br>
+        <br>
+        <h4 class="card-title text-center text-decoration-underline">Para el remolino de canela</h4>
+        <br>
+        <p class="fw-bold">Paso 1</p>
+        <p>Mezclar todos los ingredientes y transferirlos a una botella con dispensador o una manga con una boquilla pequeña.</p>
+        <hr>
+        <br>
+        <h4 class="card-title text-center text-decoration-underline">Para los pancakes</h4>
+        <br>
+        <p class="fw-bold">Paso 1</p>
+        <p>Mezclar todos los ingredientes con un batidor de mano.</p>
+        <p class="fw-bold">Paso 2</p>
+        <p>Precalentar una sartén a fuego medio-bajo.</p>
+        <p class="fw-bold">Paso 3</p>
+        <p>Esparcir un poco de aceite o mantequilla en la sartén y verter un poco de masa sobre ella. Esperar a que rompan las primeras burbujas en la superficie y hacer un remolino de canela sobre el pancake. Aún no lo des vuelta.</p>
+        <p class="fw-bold">Paso 4</p>
+        <p>Cuando hayan reventado muchas burbujas y ya no se vuelvan a cubrir con masa luego de reventar, darle la vuelta al pancake con cuidado, pero rápidamente. Cocinarlo por este lado solo 1 minuto.</p>
+        <hr>
+        <br>
+        <h4 class="card-title text-center text-decoration-underline">Para el glaseado</h4>
+        <br>
+        <p class="fw-bold">Paso 1</p>
+        <p>Mezclar el azúcar flor con suficiente agua para formar una pasta. Servir sobre los pancakes con miel de maple o syrup.</p>
+    </div>
+</div>
+{% endblock %}

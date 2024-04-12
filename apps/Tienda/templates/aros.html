@@ -1,0 +1,36 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/tienda.css' %}">
+<link rel="stylesheet" href="{% static 'css/carrito.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<div class="card h-150" style="width: 116rem;">
+    <img src="media/imagenesProductos/aros-de-cebolla-fritos-1.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h3 class="card-title text-center text-decoration-underline">Aros de Cebolla</h3>
+        <p class="card-text">Los aros de cebolla son un delicioso snack para empezar a compartir, con amigos y familia.</p>
+        <hr>
+        <br>
+        <h2 class="card-title text-center text-decoration-underline">Preparación</h2>
+        <br>
+        <br>
+        <p class="fw-bold">Paso 1</p>
+        <p>Pelamos la cebolla y quitamos la primera capa que, es un poco durita. La cortamos en rodajas finas, de abajo a arriba de la cebolla y de 1cm de grosor, para que queden en forma de aro.</p>
+        <p class="fw-bold">Paso 2</p>
+        <p>Después, separamos con los dedos las diferentes capas de la cebolla para conseguir los aritos.</p>
+        <p class="fw-bold">Paso 3</p>
+        <p>Metemos los aros de cebolla en agua fría durante unos 30 minutos. Desechamos aquellas partes que no hayan conservado su forma redonda o que sean demasiado pequeñas para hacer aros de cebolla con ellas (En la cocina, nunca tiramos nada. Estos restos sirven para otra elaboración).</p>
+        <p class="fw-bold">Paso 4</p>
+        <p>En un bol amplio mezclamos la harina, una cucharada de levadura química, agua bien fría, una cucharadita de sal, otra de pimentón y mezclamos todo bien con un tenedor hasta que quede una especie de crema, sin grumos. Tiene que quedar con cierto espesor pero más bien líquido.</p>
+        <p class="fw-bold">Paso 5</p>
+        <p>Escurrimos los aros de cebolla del agua, les echamos una pizquita de sal y los metemos en la mezcla, asegurándonos de que se impregnen bien de ella. Les retiramos el exceso de masa y los pasamos por pan rallado. Reservamos en un plato y seguimos haciendo más aros de cebolla, hasta acabar con todos.</p>
+        <p class="fw-bold">Paso 6</p>
+        <p>Los freímos a fuego fuerte en abundante aceite de oliva. Pasados unos 30 segundos, los retiramos, dejando que reposen sobre una rejilla para escurrir el exceso de aceite sin que se ablanden. Así quedarán crujientes.</p>
+    </div>
+</div>
+{% endblock %}

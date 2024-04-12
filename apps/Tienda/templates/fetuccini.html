@@ -1,0 +1,50 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/tienda.css' %}">
+<link rel="stylesheet" href="{% static 'css/carrito.css' %}">
+{% endblock %}
+
+{% block body %}
+
+<div class="card h-150" style="width: 116rem;">
+    <img src="media/imagenesProductos/pasta-bolognese-spaghetti-long-banner-with-fettuccine-mincemeat-and-tomatoes-photo.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h3 class="card-title text-center text-decoration-underline">Fetuccini</h3>
+        <p class="card-text">Fetuccini con salsa boloñesa casera de lomo liso y verduritas; cebolla, zanahoria, ajo,
+            orégano, pimienta, con finos cortes de perejil y queso parmesano.</p>
+        <hr>
+        <br>
+        <h2 class="card-title text-center text-decoration-underline">Preparación</h2>
+        <br>
+        <br>
+        <p class="fw-bold">Paso 1</p>
+        <p>En una olla grande, hierve agua con sal y cocina los fettuccine según las instrucciones del paquete hasta que
+            estén al dente. Luego, escúrrelos y reserva.</p>
+        <p class="fw-bold">Paso 2</p>
+        <p>Mientras tanto, en una sartén grande, calienta un poco de aceite a fuego medio-alto. Agrega la cebolla, el
+            ajo, la zanahoria y el apio, y cocínalos hasta que estén tiernos y ligeramente dorados.</p>
+        <p class="fw-bold">Paso 3</p>
+        <p>Añade la carne molida a la sartén y cocínala hasta que esté bien dorada y no haya restos de color rosa. Rompe
+            la carne en trozos más pequeños mientras la cocinas.</p>
+        <p class="fw-bold">Paso 4</p>
+        <p>Agrega los tomates triturados, la pasta de tomate, el caldo de carne y el vino tinto (si lo estás usando).
+            Reduce el fuego a medio-bajo y deja que la salsa hierva a fuego lento durante unos 30 minutos para que los
+            sabores se mezclen. Revuelve ocasionalmente.</p>
+        <p class="fw-bold">Paso 5</p>
+        <p>Añade el azúcar, la sal, la pimienta negra, el orégano y las hojuelas de chile rojo (si deseas un poco de
+            picante). Prueba la salsa y ajusta los condimentos según tu preferencia.</p>
+        <p class="fw-bold">Paso 6</p>
+        <p>Cocina la salsa a fuego lento durante otros 10-15 minutos. Si la salsa parece espesa, puedes agregar un poco
+            más de caldo de carne para diluirla.</p>
+        <p class="fw-bold">Paso 7</p>
+        <p>Coloca los fettuccine cocidos en la salsa boloñesa y revuélvelos suavemente hasta que estén bien cubiertos.
+        </p>
+        <p class="fw-bold">Paso 8</p>
+        <p>Sirve los fettuccine a la boloñesa en platos individuales. Espolvorea queso parmesano rallado por encima y
+            decora con hojas de albahaca fresca, si lo deseas.</p>
+    </div>
+</div>
+{% endblock %}

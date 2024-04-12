@@ -1,0 +1,118 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/tienda.css' %}">
+<link rel="stylesheet" href="{% static 'css/carrito.css' %}">
+{% endblock %}
+
+{% block body %}
+<div class="help-menu">
+    <ul>
+        <a class="btn btn-primary" href="/agregarProducto" role="button">Administrar</a>
+    </ul>
+</div>
+<div class="container">
+    <div class="row mt-5">
+        <h2>Entrantes</h2>
+        {% for e in entrante %}
+        <div class="col">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="{{e.image_url.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{e.nombre}}</h5>
+                <p class="card-text">{{e.descripcion}}</p>
+                <a href="aros" class="btn btn-primary">{{e.precio}}</a>
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="row mt-5">
+        <h2>Platos</h2>
+        {% for p in plato %}
+        <div class="col">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="{{p.image_url.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{p.nombre}}</h5>
+                <p class="card-text">{{p.descripcion}}</p>
+                <a href="fetuccini" class="btn btn-primary">{{p.precio}}</a>
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="row mt-5">
+        <h2>Postres</h2>
+        {% for p in postre %}
+        <div class="col">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="{{p.image_url.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{p.nombre}}</h5>
+                <p class="card-text">{{p.descripcion}}</p>
+                <a href="panqueque" class="btn btn-primary">{{p.precio}}</a>
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <div class="row mt-5">
+        <h2>Bebestibles</h2>
+        {% for b in bebestible %}
+        <div class="col">
+          <div class="card h-100" style="width: 18rem;">
+            <img src="{{b.image_url.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{b.nombre}}</h5>
+                <p class="card-text">{{b.descripcion}}</p>
+                <a href="#" class="btn btn-primary">{{b.precio}}</a>
+            </div>
+        </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<h1>
+
+</h1>
+
+<footer>
+    <div class="containerfooter">   
+        <div class="contact-info">
+            <div class="column">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>123 Calle Principal, Santiago</li>
+                    <li><i class="fas fa-phone"></i>(123) 456-7890</li>
+                    <li><i class="fas fa-envelope"></i>SuChef@gmail.com.com</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Redes Sociales</h3>
+                <ul>
+                    <li><i class="fab fa-twitter"></i><a href="#">@SuChef</a></li>
+                    <li><i class="fab fa-facebook"></i><a href="#">SuChef</a></li>
+                    <li><i class="fab fa-instagram"></i><a href="#">@SuChef</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<h1>
+
+</h1>
+
+
+{% endblock %}
+
+{% block script %}
+<script src="{% static 'js/carrito.js' %}"></script>
+<script src="{% static 'js/filter.js' %}"></script>
+{% endblock %}
